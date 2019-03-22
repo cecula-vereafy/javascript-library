@@ -1,4 +1,4 @@
-## Vereafy Javascript Library
+## Vereafy JavaScript Library
 
 - Introduction
 - Initialization
@@ -11,11 +11,13 @@
 
 Vereafy is an SMS based 2-factor authentication services that uses machine learning to understand the causes of OTP delivery failures and resolves them instantly to ensure your login and sign up OTPs deliver.
 
-- Introduction
-  The Vereafy JavaScript Library Project was created to enable JavaScript developers integrate seamlessly with the Vereafy API.
+### Introduction
 
-- Initialization
-  The Vereafy 2fa initialization can be as simple as the following lines of code and Replace the values of sendData and vereafy.apiKey with your parameters
+The Vereafy JavaScript Library Project was created to enable JavaScript developers integrate seamlessly with the Vereafy API.
+
+### Initialization
+
+The Vereafy 2fa initialization can be as simple as the following lines of code and Replace the values of sendData and vereafy.apiKey with your parameters
 
 ```js
 vereafy.apiKey = "api_key";
@@ -34,8 +36,9 @@ The Initialization method returns a response that should look like this:
 }
 ```
 
-- Resend
-  In a case where your app users get impatient and hits the retry link on your app form, just call the resend method this way: Replace the values of sendData and vereafy.apiKey with your parameters
+### Resend
+
+In a case where your app users get impatient and hits the retry link on your app form, just call the resend method this way: Replace the values of sendData and vereafy.apiKey with your parameters
 
 ```js
 vereafy.apiKey = "api_key";
@@ -54,8 +57,9 @@ The Resend method returns a response that should look like this:
 }
 ```
 
-- Completion
-  The Vereafy 2fa completion can be as simple as the following lines of code: Replace the values of sendData and vereafy.apiKey with your parameters
+### Completion
+
+The Vereafy 2fa completion can be as simple as the following lines of code: Replace the values of sendData and vereafy.apiKey with your parameters
 
 ```js
 var sendData = { pinRef: "Your_pinRef", token: "Your_token" };
@@ -69,5 +73,24 @@ The Completion method returns a response that should look like this if the param
 ```json
 {
   "response": "success"
+}
+```
+
+### Get Balance
+
+To get your balance on Vereafy, the getbalance method is used this way: This method requires no parameter: Replace the value of vereafy.apiKey with your parameters
+
+```js
+vereafy.apiKey = "api_key";
+vereafy.sendData(response => {
+  // response will return a json as seen below
+});
+```
+
+The get balance method returns a response that should look like:
+
+```json
+{
+  "balance": 200
 }
 ```

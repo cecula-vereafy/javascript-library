@@ -1,8 +1,8 @@
 ## Vereafy JavaScript Library
 
 - Introduction
-- How to Get API Key
 - Initialization
+- How to Get API Key
 - Resend
 - Completion
 - Get Balance

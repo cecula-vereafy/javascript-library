@@ -4,7 +4,7 @@ vereafy.apiKey = "";
 // Initializing 2FA Request
 vereafy.init = (dataObj, callback) => {
   httpRequest(dataObj, "init").then(response => {
-    callback(result);
+    callback(response);
   });
 };
 
@@ -24,16 +24,16 @@ vereafy.complete = (dataObj, callback) => {
 
 // Get Balance
 vereafy.balance = callback => {
-  httpRequest("tfabalance").then(response => {
+  httpRequest("", "tfabalance", "GET").then(response => {
     callback(response);
   });
 };
 
 // httpRequest to Cecula api
-function httpRequest(method, dataObj, endpoint) {
+function httpRequest(dataObj, endpoint, method) {
   return new Promise(resolve => {
     var xhr = new XMLHttpRequest();
-    xhr.withCredentials = true;
+    xhr.withCredentials = false;
     xhr.addEventListener("readystatechange", function() {
       if (this.readyState === 4) {
         resolve(this.responseText);
@@ -41,7 +41,7 @@ function httpRequest(method, dataObj, endpoint) {
     });
     if (method === "GET") {
       // GET request Endpoint
-      xhr.open("GET", "https://api.cecula.com/account/tfabalance" + endpoint);
+      xhr.open("GET", "https://api.cecula.com/account/" + endpoint);
       xhr.setRequestHeader("authorization", "Bearer " + vereafy.apiKey);
       xhr.send(data);
     } else {

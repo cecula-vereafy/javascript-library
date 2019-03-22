@@ -1,6 +1,7 @@
 ## Vereafy JavaScript Library
 
 - Introduction
+- How to Get API Key
 - Initialization
 - Resend
 - Completion
@@ -14,7 +15,6 @@ Vereafy is an SMS based 2-factor authentication services that uses machine learn
 ### Introduction
 
 The Vereafy JavaScript Library Project was created to enable JavaScript developers integrate seamlessly with the Vereafy API.
-This Vereafy JavaScript Library Project was created to enable JavaScript developers integrate seamlessly with the Vereafy API.
 
 ### How to use this library
 
@@ -23,6 +23,15 @@ This Vereafy JavaScript Library Project was created to enable JavaScript develop
 - Require this file in your project file
 - Call any of the function you want to use in your file and put in the parameters and a callback function
 - The parameters are passed as dataObj and are inputed in a JSON format /({"mobile":"23470xxxxxx"})/
+
+### How to Get API Key
+
+Your API Key is first generated when you register an app. To register an app,
+Login to the Developers Dashboard, Navigate to Apps > Add, Type the name of your app and click **Submit**. The app will be registered and a new API Key will be generated. Copy the API key into your project
+
+### or
+
+click [developer.cecular.com](https://developer.cecula.com/docs/introduction/generating-api-key) to get started
 
 ### Initialization
 

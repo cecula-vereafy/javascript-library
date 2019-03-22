@@ -30,7 +30,7 @@ Login to the Developers Dashboard, Navigate to Apps > Add, Type the name of your
 
 ### or
 
-click [developer.cecular.com](https://developer.cecula.com/docs/introduction/generating-api-key) to get started
+click [developer.cecula.com](https://developer.cecula.com/docs/introduction/generating-api-key) to get started
 
 ### Initialization
 

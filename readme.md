@@ -14,6 +14,15 @@ Vereafy is an SMS based 2-factor authentication services that uses machine learn
 ### Introduction
 
 The Vereafy JavaScript Library Project was created to enable JavaScript developers integrate seamlessly with the Vereafy API.
+This Vereafy JavaScript Library Project was created to enable JavaScript developers integrate seamlessly with the Vereafy API.
+
+### How to use this library
+
+- First download the file into your project directory
+- Replace the vereafy.apiKey with your api key inside the string
+- Require this file in your project file
+- Call any of the function you want to use in your file and put in the parameters and a callback function
+- The parameters are passed as dataObj and are inputed in a JSON format /({"mobile":"23470xxxxxx"})/
 
 ### Initialization
 

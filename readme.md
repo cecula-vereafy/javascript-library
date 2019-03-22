@@ -6,7 +6,6 @@
 - Resend
 - Completion
 - Get Balance
-- Introduction
 
 ---
 
